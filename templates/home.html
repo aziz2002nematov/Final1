@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}AIU News |
+Home{% endblock title %}
+
+{% block content %}
+    <br/>
+    <div style="background-image: url('http://alatoo.edu.kg/image?img=image_17_1464422478867481112.jpg');  background-size: cover; background-position: left;   border: 15mm; border-width: 5px; color: rgba(0, 0, 0, 0.815);  background-attachment:scroll; border-style: solid; background-repeat: no-repeat;   text-align: center;" class="jumbotron" >
+        <h1 class="display-4">Welcome !</h1>
+        <p class="lead">Here you will be informed about the latest news about Ala-Too university</p>   
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">View posts
+            </a>
+        </p>
+    </div>
+{% endblock content %}
